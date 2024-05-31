@@ -1,5 +1,5 @@
-# Сортировка массива по возрастанию
-def find_smallest(arr):
+# Алгоритм сортировки выбором. Сортировка массива по возрастанию
+def find_smallest(arr): # Функция нахождения наименьшего элемента массива
     smallest = arr[0]
     smallest_index = 0
     for i in range(1, len(arr)):
@@ -8,7 +8,7 @@ def find_smallest(arr):
             smallest_index = i
     return smallest_index
 
-def selection_sort(arr):
+def selection_sort(arr): # Функция сортировки выбором. Время выполнения On^2
     newArr = []
     for i in range(len(arr)):
         smallest = find_smallest(arr)
